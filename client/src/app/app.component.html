@@ -1,40 +1,208 @@
-  <nav>
-      <span>
-        <a [routerLink]=" ['./'] ">
-          Index
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./home'] ">
-          Home
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./detail'] ">
-          Detail
-        </a>
-      </span>
-      |
-      <span>
-        <a [routerLink]=" ['./about'] ">
-          About
-        </a>
-      </span>
-    </nav>
+<div class="container-fuid">
 
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-
-    <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
-
-    <footer>
-      <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
-      <div>
-        <a [href]="url">
-          <img [src]="angularclassLogo" width="25%">
-        </a>
+  <div class="jumbotron">
+    <div class="container">
+      <!-- row 1 -->
+      <div class="row">
+        <header class="col-md-12">
+          <h1>Un Ensayo para Mi</h1>
+          <h2>Una enfermedad. Una oportunidad.</h2>
+          <a class="btn btn-default btn-lg" href="#" role="button">Conoce Más</a>
+        </header>
       </div>
-    </footer>
+    </div>
+  </div>
+
+    <div class="container">
+      <!-- row 2 -->
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-sm-6 col-lg-push-4">
+           <h3>Some text with <small>secondary text</small></h3>
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-pull-4">
+          <h3>Add to your favorites
+            <small>
+              <kbd class="nowrap"><kbd>ctrl</kbd> + <kbd>d</kbd></kbd>
+            </small>
+          </h3>
+        </div>
+      </div>
+
+      <!-- row 3 -->
+      <div class="row">
+        <div class="col-md-3 col-xs-5">
+          <pre>
+&lt;p&gt;I love programming!&lt;/p&gt;
+&lt;p&gt;This paragraph is on my landing page&lt;/p&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;p&gt;Bootstrap by example&lt;/p&gt;
+          </pre>
+        </div>
+        <div class="col-md-9 col-xs-7">
+          <img [src]="center" class="img-responsive hidden-xs">
+          <img [src]="centerXS" class="img-responsive visible-xs">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+        </div>
+      </div>
+
+      <!-- row 4 -->
+      <div class="row">
+        <div class="col-md-3 hidden-xs col-sm-3">
+          <img [src]="bs" class="img-responsive">
+        </div>
+        <div class="col-md-6 col-xs-offset-1 col-xs-11 col-sm-6 col-sm-offset-0">
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Testimonial from someone at <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+        </div>
+        <div class="col-md-3 col-xs-7 col-sm-3">
+          <img [src]="packt" class="img-responsive">
+        </div>
+        <div class="col-xs-5 hidden-sm hidden-md hidden-lg">
+          <img [src]="bs" class="img-responsive">
+        </div>
+      </div>
+
+      <!-- row 5 -->
+      <div class="row">
+        <div class="col-md-3">
+          <p class="text-left"><code>&lt;Left&gt;</code></p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-center">Center</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-justify">Jusitfy</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-right">Right</p>
+        </div>
+      </div>
+
+      <!-- row 6 – nesting rows -->
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Lowercase</h3>
+          <p class="text-lowercase">
+            Lorem ipsum dolor ... consequat.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <h3>Uppercase</h3>
+              <p class="text-uppercase">
+                Lorem ipsum dolor ... consequat.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <h3>Capitalize</h3>
+              <p class="text-capitalize">
+                Lorem ipsum dolor ... consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Strong and italic</h3>
+          <p>
+            <strong>Lorem ipsum</strong> dolor ... <em>consequat</em>.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <table class="table table-striped table-bordered table-hover">
+            <thead>
+              <tr>
+                <th class="success">
+                  <h4 class="text-center">Free plan</h4>
+                </th>
+                <th class="info">
+                  <h4 class="text-center">Standard plan</h4>
+                </th>
+                <th class="danger">
+                  <h4 class="text-center">Premium plan</h4>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h3 class="text-center">$ 0</h3>
+                </td>
+                <td>
+                  <h3 class="text-center">$ 99</h3>
+                </td>
+                <td>
+                  <h3 class="text-center">$ 999</h3>
+                </td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>Dolor sit amet</td>
+                <td>Lorem ipsum</td>
+                <td>Lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>Dolor sit amet</td>
+                <td>Lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>Lorem ipsum</td>
+              </tr>
+              <tr>
+                <td><a href="#" class="btn btn-success btn-block">Purchase</a></td>
+                <td><a href="#" class="btn btn-info btn-block">Purchase</a></td>
+                <td><a href="#" class="btn btn-danger btn-block">Purchase</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- row 7 -->
+      <footer class="row jumbotron">
+        <div class="col-md-2">
+          <img [src]="logo" class="img-responsive">
+        </div>
+        <div class="col-md-7">
+          <ul class="list-inline list-unstyled">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Packt publisher</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <address>
+            <strong>Name, Inc.</strong><br>
+            Address line 1<br>
+            Address line 2<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+        </div>
+      </footer>
+    </div>
+
+</div>
