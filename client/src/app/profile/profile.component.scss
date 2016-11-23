@@ -1,0 +1,54 @@
+// profile settings
+
+#profile-settings .nav-stacked li {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+}
+
+#profile-settings .nav-stacked a {
+  border-radius: 0;
+}
+
+#profile-settings .nav-stacked li:first-child a {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+
+#profile-settings .nav-stacked li:last-child {
+  border-bottom: 0;
+}
+
+
+
+#profile-settings .nav-stacked li:last-child a {
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+// account Tabs
+
+#account-tabs > li {
+  border-bottom: 0.1rem solid #e5e5e5;
+  border-bottom: 0;
+}
+
+#account-tabs a {
+  border-bottom: 0;
+}
+
+#account-tabs li.active {
+  border-bottom: 0;
+}
+
+#account-tabs {
+  position: relative;
+  z-index: 99;
+}
+
+#main .tab-content {
+  padding: 2em;
+  margin-top: -0.1rem;
+}
+
+#main .form-horizontal .form-group:last-child {
+  margin-bottom: 0;
+}

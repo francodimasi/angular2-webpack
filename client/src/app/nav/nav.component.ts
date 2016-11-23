@@ -1,34 +1,32 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { AppState } from './app.service';
+import { AppState } from '../app.service';
 
 /*
  * App Component
  * Top Level Component
  */
 @Component({
-  selector: 'app',
-  encapsulation: ViewEncapsulation.None,
+  selector: 'unav',
   styleUrls: [
-    './app.component.scss'
+    './nav.component.scss'
   ],
-  templateUrl: './app.component.html'
+  templateUrl: './nav.component.html'
 
 })
-export class AppComponent {
-  name = 'Twitter';
-  url = 'https://twitter.com/AngularClass';
+export class NavComponent {
+  avatar = 'assets/img/avatar.png';
+  logo = 'assets/img/logo.png';
 
-  constructor(
-    public appState: AppState) {
+  constructor(public appState: AppState) {
 
   }
 
   ngOnInit() {
-    console.log('Initial App State', this.appState.state);
+    console.log('hello `unav` component');
   }
 
 }

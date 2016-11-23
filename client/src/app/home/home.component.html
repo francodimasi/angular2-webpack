@@ -1,0 +1,163 @@
+<div class="container">
+  <div class="row">
+    <div id="profile" class="col-md-3 hidden-sm hidden-xs">
+
+      <div id="profile-resume" class="card">
+        <img class="card-img-top img-responsive" [src]="banner">
+        <div class="card-block">
+          <img [src]="avatar" class="card-img">
+          <h4 class="card-title">Jonny Doo <small>@jonnydoo</small></h4>
+          <p class="card-text">Dog goes woofy. Did you said squitly?</p>
+          <ul class="list-inline list-unstyled">
+            <li id="card-tweets">
+              <a href="#">
+                <span class="profile-stats">Tweets</span>
+                <span class="profile-value">99k</span>
+              </a>
+            </li>
+            <li class="card-following">
+              <a href="#">
+                <span class="profile-stats">Following</span>
+                <span class="profile-value">7</span>
+              </a>
+            </li>
+            <li class="card-followers">
+              <a href="#">
+                <span class="profile-stats">Followers</span>
+                <span class="profile-value">132k</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="main" class="col-sm-12 col-md-6">
+
+      <ol class="breadcrumb card">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li class="active">Feed</li>
+      </ol>
+
+      <div id="main-card" class="card">
+        <form id="new-message">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="What is happening?">
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+            </span>
+          </div>
+        </form>
+
+        <ul id="feed" class="list-unstyled">
+          <li>
+            <img [src]="avatar" class="feed-avatar img-circle">
+            <div class="feed-post">
+              <h5>Name <small>@namex - 3h</small></h5>
+              <p> You can't hold a dog down without staying down with him!</p>
+            </div>
+            <div class="action-list">
+              <a href="#">
+                <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+              </a>
+              <a href="#">
+                <span class="glyphicon glyphicon-refresh " aria-hidden="true"></span>
+                <span class="retweet-count">6</span>
+              </a>
+              <a href="#">
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <img [src]="avatar" class="feed-avatar img-circle">
+            <div class="feed-post">
+              <h5>Name <small>@namex - 3h</small></h5>
+              <p> You can't hold a dog down without staying down with him!</p>
+            </div>
+            <div class="action-list">
+              <a href="#">
+                <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+              </a>
+              <a href="#">
+                <span class="glyphicon glyphicon-refresh " aria-hidden="true"></span>
+                <span class="retweet-count">6</span>
+              </a>
+              <a href="#">
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <nav class="text-center">
+        <ul class="pagination pagination-lg">
+          <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">2</a></li>
+          <li class="disabled"><a href="#">...</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div id="right-content" class="col-md-3 hidden-sm hidden-xs">
+
+      <div id="who-follow" class="card">
+        <div class="card-header">
+          Who to follow
+        </div>
+        <div class="card-block">
+
+          <ul class="list-unstyled">
+            <li>
+              <img [src]="avatar" class="img-rounded">
+              <div class="info">
+                <strong>Crazy cats</strong>
+                <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Follow
+                </button>
+              </div>
+            </li>
+            <li>
+              <img [src]="avatar" class="img-rounded">
+              <div class="info">
+                <strong>Free ration alert</strong>
+                <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Follow
+                </button>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div id="app-info" class="card">
+        <div class="card-block">
+          © 2015 Franco Di Masi
+          <ul class="list-unstyled list-inline">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms and Privacy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Status</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#">Connect other address book</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

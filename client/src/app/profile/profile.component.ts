@@ -1,34 +1,33 @@
 /*
  * Angular 2 decorators and services
  */
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { AppState } from './app.service';
+import { AppState } from '../app.service';
 
 /*
  * App Component
  * Top Level Component
  */
 @Component({
-  selector: 'app',
-  encapsulation: ViewEncapsulation.None,
+  selector: 'profile',
   styleUrls: [
-    './app.component.scss'
+    './profile.component.scss'
   ],
-  templateUrl: './app.component.html'
+  templateUrl: './profile.component.html'
 
 })
-export class AppComponent {
-  name = 'Twitter';
-  url = 'https://twitter.com/AngularClass';
+export class ProfileComponent {
 
-  constructor(
-    public appState: AppState) {
+  avatar = 'assets/img/avatar.png';
+  banner = 'assets/img/banner.jpeg';
+
+  constructor(public appState: AppState) {
 
   }
 
   ngOnInit() {
-    console.log('Initial App State', this.appState.state);
+    console.log("Hola Home");
   }
 
 }
