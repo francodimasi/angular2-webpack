@@ -18,7 +18,7 @@ import { AppState, InternalStateType } from './app.service';
 // home-brew components
 import { NavComponent } from './nav';
 import { HomeComponent } from './home';
-import { ProfileComponent } from './profile'
+
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -40,8 +40,7 @@ type StoreType = {
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent,
-    ProfileComponent
+    HomeComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

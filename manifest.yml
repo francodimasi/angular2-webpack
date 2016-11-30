@@ -7,3 +7,6 @@ applications:
   host: sdash
   services:
   - sdash-cloudantNoSQLDB
+  - twitter
+  - watson-alchemy
+  - watson-conversation
