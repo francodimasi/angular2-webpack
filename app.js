@@ -47,6 +47,4 @@ app.use(function(err, req, res, next) {
   });
 });
 
-console.log("Holi, soy FMGordillo");
-
 module.exports = app;
