@@ -8,7 +8,7 @@ var cloudant = Cloudant({url: cloudantUrl, plugin:'promises'});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-
+  res.json({"Version": "1.0"});
 });
 
 router.get('/tweets', function(req, res, next) {
